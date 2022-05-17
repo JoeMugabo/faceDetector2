@@ -6,8 +6,8 @@ const Appp = () => {
       console.log(main);
       await loadFull(main);
     }
-      const particlesLoaded = (container) => {
-        console.log(container);
+      const particlesLoaded = () => {
+        
       };
       return (
         <Particles className="particlesOptionss"
@@ -17,7 +17,7 @@ const Appp = () => {
           options={{
             "particles": {
               "number": {
-                "value": 80,
+                "value": 100,
                 "density": {
                   "enable": true,
                   "value_area": 800
@@ -52,8 +52,8 @@ const Appp = () => {
                 }
               },
               "size": {
-                "value": 4,
-                "random": true,
+                "value": 1,
+                "random": false,
                 "anim": {
                   "enable": false,
                   "speed": 40,
@@ -84,14 +84,14 @@ const Appp = () => {
               }
             },
             "interactivity": {
-              "detect_on": "canvas",
+              "detect_on": "window",
               "events": {
                 "onhover": {
                   "enable": true,
                   "mode": "repulse"
                 },
                 "onclick": {
-                  "enable": true,
+                  "enable": false,
                   "mode": "push"
                 },
                 "resize": true
@@ -111,7 +111,7 @@ const Appp = () => {
                   "speed": 5
                 },
                 "repulse": {
-                  "distance": 200,
+                  "distance": 120,
                   "duration": 0.4
                 },
                 "push": {
